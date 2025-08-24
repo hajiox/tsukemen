@@ -3,9 +3,9 @@ import TsukemenLP from "./tsukemen-lp"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tsukemen.aizubrandhall-lp.com"),
+  metadataBase: new URL("https://tsukemen.aizubrandhall-lp2.com"),
   title: {
-    default: "【職人手作り・1日限定400食】特濃つけ麺｜本格つけ麺通販・お取り寄せ｜会津ブランド館",
+    default: "【公式】特濃つけ麺｜本格つけ麺通販・お取り寄せ｜魚介豚骨と極にぼし｜会津ブランド館",
     template: "%s | 会津ブランド館",
   },
   description:
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "【職人手作り・1日限定400食】特濃つけ麺｜本格つけ麺通販",
+    title: "【公式】特濃つけ麺｜本格つけ麺通販・お取り寄せ｜魚介豚骨と極にぼし",
     description:
       "職人が手仕事で仕込む特濃つけ麺。大規模工場では作れない本物の味を1日限定400食でお届け。濃厚魚介豚骨スープ×極太オーション麺で専門店さながらの一杯をご自宅で。",
-    url: "https://tsukemen.aizubrandhall-lp.com",
+    url: "https://tsukemen.aizubrandhall-lp2.com",
     siteName: "会津ブランド館",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aizu_brand_kan",
     creator: "@aizu_brand_kan",
-    title: "【職人手作り・1日限定400食】特濃つけ麺｜本格つけ麺通販",
+    title: "【公式】特濃つけ麺｜本格つけ麺通販・お取り寄せ｜魚介豚骨と極にぼし",
     description:
       "職人が手仕事で仕込む特濃つけ麺。大規模工場では作れない本物の味を1日限定400食でお届け。濃厚魚介豚骨スープ×極太オーション麺で専門店さながらの一杯をご自宅で。",
     images: [
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://tsukemen.aizubrandhall-lp.com",
+    canonical: "https://tsukemen.aizubrandhall-lp2.com",
   },
   category: "food",
   classification: "つけ麺通販",
