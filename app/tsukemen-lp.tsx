@@ -182,7 +182,19 @@ export default function TsukemenLP() {
       <main className="flex-grow">
         {/* メインビジュアル */}
         <section className="relative">
-          <div className="relative w-full">
+          {/* スマホ用：縦長画像 */}
+          <div className="block md:hidden w-full">
+            <Image
+              src="/images/main-visual-mobile.jpg"
+              alt="特濃つけ麺 - 濃厚スープ × 極太麺"
+              width={960}
+              height={1280}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+          {/* PC用：横長画像 */}
+          <div className="hidden md:block w-full">
             <Image
               src="/images/new-main-visual.jpeg"
               alt="特濃つけ麺 - 濃厚スープ × 極太麺"
