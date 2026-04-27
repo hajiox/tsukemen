@@ -1,25 +1,26 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import type { Metadata, Viewport } from "next"
+import { Noto_Sans_JP } from "next/font/google"
 import "./globals.css"
 
-import { Inter } from "next/font/google"
-
-const inter = Inter({ subsets: ["latin"] })
+const notoSansJP = Noto_Sans_JP({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-noto-sans-jp",
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tsukemen.aizubrandhall-lp.com"),
+  metadataBase: new URL("https://tsukemen.aizubrandhall-lp2.com"),
   title: {
-    default: "会津ブランド館｜福島県会津の特産品・グルメ通販",
+    default: "【公式】特濃つけ麺｜本格つけ麺通販・お取り寄せ｜魚介豚骨と極にぼし｜会津ブランド館",
     template: "%s | 会津ブランド館",
   },
-  description: "福島県会津の特産品・グルメを全国にお届け。本格つけ麺をはじめとした会津の味をお楽しみください。",
+  description: "職人が手仕事で仕込む特濃つけ麺。大規模工場では作れない本物の味を1日限定400食でお届け。濃厚魚介豚骨スープ×極太オーション麺で専門店さながらの一杯をご自宅で。",
   generator: "Next.js",
   applicationName: "会津ブランド館",
   referrer: "origin-when-cross-origin",
-  keywords: ["会津", "福島", "特産品", "グルメ", "通販", "つけ麺"],
-  authors: [{ name: "会津ブランド館", url: "https://tsukemen.aizubrandhall-lp.com" }],
+  keywords: ["会津", "福島", "特産品", "グルメ", "通販", "つけ麺", "特濃つけ麺", "魚介豚骨"],
+  authors: [{ name: "会津ブランド館", url: "https://tsukemen.aizubrandhall-lp2.com" }],
   creator: "会津ブランド館",
   publisher: "会津ブランド館",
   formatDetection: {
@@ -29,37 +30,23 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={notoSansJP.variable}>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EJ6JCB9N2"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2EJ6JCB9N2');
-      `,
-          }}
-        />
-        <link rel="canonical" href="https://tsukemen.aizubrandhall-lp.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ffffff" />
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
+        <link rel="canonical" href="https://tsukemen.aizubrandhall-lp2.com" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={notoSansJP.className}>{children}</body>
     </html>
   )
 }
