@@ -11,6 +11,26 @@ import { Facebook, Instagram, Youtube } from "lucide-react"
 export default function TsukemenLP() {
   const [currentReviews, setCurrentReviews] = useState<any[]>([])
 
+  // Meta Pixel purchase click handler
+  const handlePurchaseClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.href
+    const isPurchaseLink =
+      href.includes("item.rakuten.co.jp/aizubrandhall/c/0000000027/") ||
+      href.includes("www.amazon.co.jp/stores/page/FAB79626-FD10-4C9B-B0D4-FCFB33654602") ||
+      href.includes("store.shopping.yahoo.co.jp/aizubrandhall/c6c3c7bba4.html")
+
+    if (isPurchaseLink && typeof window !== "undefined" && window.fbq) {
+      e.preventDefault()
+      window.fbq("trackCustom", "MallClick", {
+        product: "tsukemen",
+      })
+      // Wait 300-500ms before navigating
+      setTimeout(() => {
+        window.open(href, "_blank", "noopener,noreferrer")
+      }, 400)
+    }
+  }
+
   const reviews = [
     {
       source: "楽天",
@@ -553,6 +573,7 @@ export default function TsukemenLP() {
                   href="https://store.shopping.yahoo.co.jp/aizubrandhall/c6c3c7bba4.html"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handlePurchaseClick}
                   className="block"
                 >
                   <div className="bg-white p-4 mx-auto max-w-[200px] aspect-square flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 hover:shadow-lg transition-shadow mb-4">
@@ -578,6 +599,7 @@ export default function TsukemenLP() {
                   href="https://item.rakuten.co.jp/aizubrandhall/c/0000000027/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handlePurchaseClick}
                   className="block"
                 >
                   <div className="bg-white p-4 mx-auto max-w-[200px] aspect-square flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 hover:shadow-lg transition-shadow mb-4">
@@ -603,6 +625,7 @@ export default function TsukemenLP() {
                   href="https://www.amazon.co.jp/stores/page/FAB79626-FD10-4C9B-B0D4-FCFB33654602"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handlePurchaseClick}
                   className="block"
                 >
                   <div className="bg-white p-4 mx-auto max-w-[200px] aspect-square flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 hover:shadow-lg transition-shadow mb-4">
