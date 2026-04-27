@@ -182,25 +182,23 @@ export default function TsukemenLP() {
       <main className="flex-grow">
         {/* メインビジュアル */}
         <section className="relative">
-          {/* スマホ用：縦長画像 */}
-          <div className="block md:hidden w-full">
+          <div className="relative w-full">
+            {/* デスクトップ用画像 */}
             <Image
-              src="/images/main-visual-mobile.jpg"
-              alt="特濃つけ麺 - 濃厚スープ × 極太麺"
-              width={960}
-              height={1280}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
-          {/* PC用：横長画像 */}
-          <div className="hidden md:block w-full">
-            <Image
-              src="/images/new-main-visual.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201.jpg-DuDpePH7V4CEOZDOHXpLm54IXmpHLo.jpeg"
               alt="特濃つけ麺 - 濃厚スープ × 極太麺"
               width={1200}
               height={675}
-              className="w-full h-auto"
+              className="w-full h-auto hidden md:block"
+              priority
+            />
+            {/* スマホ用画像 */}
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%80%90%E8%A3%9C%E6%AD%A3%E3%80%91IMG_0107%E5%B0%8F-stOVojPfxZLgkHzoY81vbXZoys4otL.jpg"
+              alt="特濃つけ麺 - 濃厚スープ × 極太麺"
+              width={768}
+              height={1024}
+              className="w-full h-auto block md:hidden"
               priority
             />
           </div>
