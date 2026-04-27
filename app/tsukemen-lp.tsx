@@ -194,7 +194,7 @@ export default function TsukemenLP() {
             />
             {/* スマホ用画像 */}
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%80%90%E8%A3%9C%E6%AD%A3%E3%80%91IMG_0107%E5%B0%8F-stOVojPfxZLgkHzoY81vbXZoys4otL.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%80%90%E8%A3%9C%E6%AD%A3%E3%80%91IMG_0107-kq0IJ7dzcollnnXQJMLVFOKdZzjMqT.jpg"
               alt="特濃つけ麺 - 濃厚スープ × 極太麺"
               width={768}
               height={1024}
