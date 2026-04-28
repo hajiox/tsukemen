@@ -177,13 +177,7 @@ export default function TsukemenLP() {
   }
 
   return (
-    <div
-      className="min-h-screen bg-white flex flex-col"
-      style={{
-        fontFamily:
-          '"Noto Sans JP", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic UI", sans-serif',
-      }}
-    >
+    <div className="min-h-screen bg-white flex flex-col font-sans">
       {/* ヘッダー */}
       <header className="bg-white py-6">
         <div className="container mx-auto px-4 flex justify-center items-center">
@@ -225,20 +219,20 @@ export default function TsukemenLP() {
         </section>
 
         {/* メインコピー */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-                濃厚スープ × 極太麺、パーフェクトラーメンシリーズに特濃つけ麺が新登場！
+        <section className="py-10 md:py-16 bg-white">
+          <div className="container mx-auto px-5 md:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 leading-snug tracking-tight">
+                濃厚スープ × 極太麺<br />
+                パーフェクトラーメンシリーズに<br className="sm:hidden" />
+                特濃つけ麺が新登場！
               </h1>
-              <p className="text-lg md:text-xl text-gray-700 mb-6">
-                ご自宅でラーメンライフを少しだけリッチに。専門店さながらの一杯を。
+              <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                ご自宅でラーメンライフを少しだけリッチに。<br className="sm:hidden" />専門店さながらの一杯を。
               </p>
-              <div className="text-lg leading-relaxed text-gray-700 space-y-6 text-left">
-                <p>
-                  パーフェクトラーメンシリーズは、化学的に濃縮されたエキスに頼らず、実店舗と同じ素材・製法で開発。たっぷりの豚骨と背脂、旨味を凝縮した魚粉を使用し、ドロっと濃厚な特製つけ汁とオーション100％極太麺を実現しました。
-                </p>
-              </div>
+              <p className="text-sm md:text-base leading-relaxed text-gray-700 text-left bg-gray-50 rounded-lg p-5 md:p-6 border-l-4 border-gray-300">
+                パーフェクトラーメンシリーズは、化学的に濃縮されたエキスに頼らず、実店舗と同じ素材・製法で開発。たっぷりの豚骨と背脂、旨味を凝縮した魚粉を使用し、ドロっと濃厚な特製つけ汁とオーション100％極太麺を実現しました。
+              </p>
             </div>
           </div>
         </section>
@@ -288,7 +282,7 @@ export default function TsukemenLP() {
                   }
                 }}
               >
-                商品特徴をもっと知る（下記をご覧ください）
+                商品の特徴を見る
               </Button>
             </div>
           </div>
@@ -297,7 +291,7 @@ export default function TsukemenLP() {
         {/* 美味しさの魅力セクション */}
         <section id="features" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">美味しさの魅力</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-gray-900">美味しさの魅力</h2>
 
             {/* エキスではない本物の素材で作る大容量の特濃つけ汁 */}
             <div className="max-w-6xl mx-auto mb-16">
@@ -310,9 +304,9 @@ export default function TsukemenLP() {
                     className="object-cover rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-gray-900">エキスではない本物の素材で作る大容量の特濃つけ汁</h3>
-                  <div className="text-lg text-gray-700 space-y-4">
+                <div className="space-y-4 md:space-y-6">
+                  <h3 className="text-lg md:text-2xl font-bold text-gray-900 leading-snug">エキスではない本物の素材で作る<br className="sm:hidden" />大容量の特濃つけ汁</h3>
+                  <div className="text-sm md:text-base text-gray-700 space-y-3 leading-relaxed">
                     <p>
                       通常のご家庭用ラーメン、つけ麺スープは30cc～60ccの小袋。これは濃縮されたエキスを使用する事で製造の手間を省き流通面での小コストを図ることを目的に採用されています。しかしエキスから作られる小袋のスープはどうしてもインスタント風の味になってしましまいお店の味とは程遠いものがあります。
                     </p>
@@ -327,9 +321,9 @@ export default function TsukemenLP() {
             {/* 日清製粉オーション１００％使用麺２００ｇ */}
             <div className="max-w-6xl mx-auto mb-16">
               <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6 md:order-2">
-                  <h3 className="text-2xl font-bold text-gray-900">日清製粉オーション１００％使用麺２００ｇ</h3>
-                  <div className="text-lg text-gray-700 space-y-4">
+                <div className="space-y-4 md:space-y-6 md:order-2">
+                  <h3 className="text-lg md:text-2xl font-bold text-gray-900 leading-snug">日清製粉オーション１００％使用<br className="sm:hidden" />麺２００ｇ</h3>
+                  <div className="text-sm md:text-base text-gray-700 space-y-3 leading-relaxed">
                     <p>
                       二郎やインスパイア系で実績のある日清製粉オーション１００％麺を使用しています。小麦のワイルドな香りと力強い弾力、食べ応えののある太麺が濃厚なつけ汁をしっかりと受け止め抜群の存在感を示しています。
                     </p>
@@ -360,9 +354,9 @@ export default function TsukemenLP() {
                     className="object-cover rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-gray-900">つけ汁たっぷり仕様。希釈後３１５ｃｃ</h3>
-                  <div className="text-lg text-gray-700 space-y-4">
+                <div className="space-y-4 md:space-y-6">
+                  <h3 className="text-lg md:text-2xl font-bold text-gray-900 leading-snug">つけ汁たっぷり仕様。<br className="sm:hidden" />希釈後３１５ｃｃ</h3>
+                  <div className="text-sm md:text-base text-gray-700 space-y-3 leading-relaxed">
                     <p>
                       つけ汁はたっぷり用意しました。つけ麺を食べていて汁がギリギリで割りスープが利用できない。ご飯を入れられない。なんて経験はございませんか？またつけ汁が少ないと直ぐに汁が冷めてしまい、つけ麺本来のポテンシャルが引き出せません。
                     </p>
@@ -390,11 +384,14 @@ export default function TsukemenLP() {
                   />
                 </div>
                 <div className="space-y-6">
-                  <h2 className="text-3xl font-bold text-gray-900">"毎日寸胴で仕込むからこそ" １日限定400食まで。</h2>
+                  <h2 className="text-xl md:text-3xl font-bold text-gray-900 leading-snug">"毎日寸胴で仕込むからこそ"<br />１日限定400食まで。</h2>
 
-                  <div className="text-lg text-gray-700 space-y-4 leading-relaxed">
+                  <div className="text-sm md:text-base text-gray-700 space-y-3 leading-relaxed">
                     <p>
-                      このつけ麺は、大規模工場ラインでは作れません。骨を炊き、魚粉を合わせ、麺に絡む特濃スープを仕込む――すべてを職人が手仕事で行っています。だからこそ、一日に仕込める数は400食まで。ご注文が重なった場合は、欠品でお待たせすることがあります。妥協せず仕込み続けることでしか生まれない旨さがあります。"待ってでも食べたい一杯"――それが特濃つけ麺です。
+                      このつけ麺は、大規模工場ラインでは作れません。骨を炊き、魚粉を合わせ、麺に絡む特濃スープを仕込む――すべてを職人が手仕事で行っています。だからこそ、一日に仕込める数は400食まで。ご注文が重なった場合は、欠品でお待たせすることがあります。
+                    </p>
+                    <p className="font-semibold text-gray-800">
+                      妥協せず仕込み続けることでしか生まれない旨さがあります。<br />"待ってでも食べたい一杯"――それが特濃つけ麺です。
                     </p>
                   </div>
                 </div>
@@ -406,7 +403,7 @@ export default function TsukemenLP() {
         {/* 商品紹介セクション */}
         <section id="products" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#1F2937]">商品ラインナップ</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-[#1F2937]">商品ラインナップ</h2>
             <div className="max-w-7xl mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                 {products.map((product) => (
@@ -448,7 +445,7 @@ export default function TsukemenLP() {
 
               {/* 関連商品 */}
               <div className="mt-16">
-                <h3 className="text-2xl font-bold text-center mb-8 text-[#1F2937]">関連商品</h3>
+                <h3 className="text-lg md:text-2xl font-bold text-center mb-6 md:mb-8 text-[#1F2937]">関連商品</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 max-w-4xl mx-auto">
                   {relatedProducts.map((product, index) => (
                     <a
@@ -490,11 +487,9 @@ export default function TsukemenLP() {
         {/* お客様の声セクション */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-4">お客様の声</h2>
-            <p className="text-center text-gray-600 mb-12">
-              これらは実際のECサイトに投稿されているものを抜粋させて頂きました。
-              <br />
-              ご購入の際のご参考にどうぞ
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-3">お客様の声</h2>
+            <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 leading-relaxed">
+              これらは実際のECサイトに投稿されているものを抜粋させて頂きました。ご購入の際のご参考にどうぞ。
             </p>
 
             <div className="space-y-6 max-w-4xl mx-auto">
@@ -521,7 +516,7 @@ export default function TsukemenLP() {
                             ))}
                           </div>
                         </div>
-                        <p className="text-gray-700 leading-relaxed">&quot;{review.comment}&quot;</p>
+                        <p className="text-sm md:text-base text-gray-700 leading-relaxed">&quot;{review.comment}&quot;</p>
                       </div>
                     </div>
                   </CardContent>
@@ -565,7 +560,7 @@ export default function TsukemenLP() {
         {/* ご購入セクション */}
         <section id="purchase" className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">ご購入はこちらから</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12">ご購入はこちらから</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {/* Yahoo!ショッピング */}
               <div className="bg-[#ffdddd] p-6 rounded-lg">
