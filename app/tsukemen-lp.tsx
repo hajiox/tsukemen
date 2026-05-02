@@ -15,23 +15,15 @@ export default function TsukemenLP() {
   const handlePurchaseClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const href = e.currentTarget.href
     const isPurchaseLink =
-      href.includes("item.rakuten.co.jp/aizubrandhall/c/0000000027/") ||
-      href.includes("www.amazon.co.jp/stores/page/FAB79626-FD10-4C9B-B0D4-FCFB33654602") ||
-      href.includes("store.shopping.yahoo.co.jp/aizubrandhall/c6c3c7bba4.html")
+      href.includes("item.rakuten.co.jp/aizubrandhall/c/0000000027") ||
+      href.includes("amazon.co.jp/stores/page/FAB79626-FD10-4C9B-B0D4-FCFB33654602") ||
+      href.includes("store.shopping.yahoo.co.jp/aizubrandhall/c6c3c7bba4")
 
-    if (isPurchaseLink) {
-      // Send Meta Pixel event if available
-      if (typeof window !== "undefined" && window.fbq) {
-        window.fbq("trackCustom", "MallClick", {
-          product: "tsukemen",
-        })
-        // Wait 300-500ms before navigating
-        setTimeout(() => {
-          window.open(href, "_blank", "noopener,noreferrer")
-        }, 400)
-        e.preventDefault()
-      }
-      // If fbq not available, allow normal link behavior
+    if (isPurchaseLink && typeof window !== "undefined" && window.fbq) {
+      // Send Meta Pixel MallClick event
+      window.fbq("trackCustom", "MallClick", {
+        product: "tsukemen",
+      })
     }
   }
 
