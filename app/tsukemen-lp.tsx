@@ -26,19 +26,6 @@ export default function TsukemenLP() {
           product: "tsukemen",
         })
       }
-      // Send Google Analytics click_purchase event
-      if ((window as any).gtag) {
-        let mall = 'unknown';
-        if (href.includes("rakuten.co.jp")) mall = "rakuten";
-        if (href.includes("amazon.co.jp")) mall = "amazon";
-        if (href.includes("yahoo.co.jp")) mall = "yahoo";
-
-        (window as any).gtag('event', 'click_purchase', {
-          event_category: 'ecommerce',
-          event_label: mall,
-          currency: 'JPY'
-        })
-      }
     }
   }
 
