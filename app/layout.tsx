@@ -45,7 +45,6 @@ export default function RootLayout({
   return (
     <html lang="ja" className={notoSansJP.variable}>
       <head>
-        <link rel="canonical" href="https://tsukemen.aizubrandhall-lp2.com" />
         {/* Meta Pixel */}
         <Script
           id="meta-pixel"
