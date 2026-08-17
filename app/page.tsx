@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/ogp-tsukemen.jpeg",
-        width: 1200,
-        height: 675,
+        width: 1000,
+        height: 550,
         alt: "職人手作り特濃つけ麺 - 濃厚つけ汁と極太麺の本格つけ麺",
         type: "image/jpeg",
       },
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
       {
         url: "/images/ogp-tsukemen.jpeg",
         alt: "職人手作り特濃つけ麺 - 濃厚つけ汁と極太麺の本格つけ麺",
-        width: 1200,
-        height: 675,
+        width: 1000,
+        height: 550,
       },
     ],
   },
