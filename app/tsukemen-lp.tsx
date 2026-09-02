@@ -156,7 +156,7 @@ export default function TsukemenLP() {
     {
       title: "極にぼしつけ汁×5食",
       description: "※麺は付属しておりません",
-      price: "1,800円",
+      price: "1,890円",
       image: "/images/kiwami-niboshi-soup-only.jpeg",
     },
     {
