@@ -130,7 +130,7 @@ export default function TsukemenLP() {
       subtitle: "特濃つけ麺 極にぼし2食セット",
       description: "麺とスープ×2食",
       note: "先ずお試しにどうぞ",
-      price: "1,350円",
+      price: "1,390円",
       image: "/images/kiwami-niboshi-2set.jpeg",
       url: "#",
     },
