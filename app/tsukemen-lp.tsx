@@ -150,7 +150,7 @@ export default function TsukemenLP() {
     {
       title: "魚介豚骨つけ汁×5食",
       description: "※麺は付属しておりません",
-      price: "1,800円",
+      price: "1,849円",
       image: "/images/gyokai-tonkotsu-soup-only.jpeg",
     },
     {
