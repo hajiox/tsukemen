@@ -120,7 +120,7 @@ export default function TsukemenLP() {
       subtitle: "特濃つけ麺 魚介豚骨6食セット",
       description: "麺とスープ×6食",
       note: "リピーターの皆さまへ",
-      price: "3,450円",
+      price: "3,690円",
       image: "/images/gyokai-tonkotsu-6set.jpeg",
       url: "#",
     },
