@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   category: "food",
   classification: "つけ麺通販",
   other: {
-    "product:price:amount": "1350",
+    "product:price:amount": "1390",
     "product:price:currency": "JPY",
     "product:availability": "in stock",
     "product:condition": "new",
